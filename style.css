@@ -1,0 +1,28 @@
+/* Letra inicial poppins para todo el contenido */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap');
+
+/* modificaciones para la pagina*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+/* letra y color de fondo para todas la pagina*/
+body{
+    font-family:  'poppins', sans-serif;
+    background-color: #252326;
+}
+
+/* modificaciones para el contenido o todas las partes de la pagina*/
+.container {
+ max-width: 1200px;
+ margin: 0 auto;
+}
+
+
+
