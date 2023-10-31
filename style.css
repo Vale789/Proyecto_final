@@ -16,6 +16,7 @@
 body{
     font-family:  'poppins', sans-serif;
     background-color: #252326;
+    position: relative;
 }
 
 /* modificaciones para el contenido o todas las partes de la pagina*/
@@ -27,7 +28,9 @@ body{
 /*Estilo para el header/parte principal de la pagina web*/
 .header {
     display: flex;
-    position: relative;
+    align-items: center;
+    min-height: 80vh;
+    padding: 70px 0;
 }
 
 /*Estilo para el menu u opciones/parte principal de la pagina web*/
@@ -39,8 +42,10 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    z-index: 1200;
 }
+
+
+
 
 /*Estilo para el logo*/
 .logo {
@@ -54,15 +59,25 @@ body{
     position: relative;
     float: left;
 }
-.menu .navbar ul li a {
+.menu .navbar ul li {
     font-size: 18px;
     padding: 25px;
     color: #DFDDE0;
     display: block;
     font-weight: 600;
 }
-/* se le pone color para al pasar el mouse */
+
+.menu .navbar ul li a{
+    font-size: 18px;
+    padding: 20px;
+    color: #f7f4f3;
+    display: block;
+}
 .menu .navbar ul li a:hover {
+    color: #f7f4f3;
+}
+/* se le pone color para al pasar el mouse */
+.menu  {
     color: #f7f4f3;
 }
 
@@ -179,8 +194,9 @@ td {
 }
 
 .recetas-2 {
-    width: 50%;
+    width: 100%;
     text-align: center;
+    
 }
 
 .recetas-2 h2 {
@@ -288,9 +304,7 @@ td {
 }
 
 /* estilos al pie de pagina footer  */
-.footer {
-    padding-bottom: 50px;
-}
+
 
 .links {
     display: flex;
@@ -318,5 +332,11 @@ td {
  height: 20px;
 }
 
+.footer {
+    padding-bottom: 50px;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-evenly;
 
-
+}
