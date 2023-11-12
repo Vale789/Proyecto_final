@@ -6,7 +6,7 @@ const elementos2 = document.getElementById('lista-2');
 const lista = document.querySelector('#lista-carrito tbody');
 const vaciarCarritoBtn = document.getElementById = ('vaciar-carrito');
 
-cargarEventListeners();
+ cargarEventListeners();
 function cargarEventListeners() {
     elementos.addEventListener('click', comprarElemento);
     elementos2.addEventListener('click', comprarElemento);
