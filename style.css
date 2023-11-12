@@ -29,8 +29,8 @@ body{
 .header {
     display: flex;
     align-items: center;
-    min-height: 80vh;
-    padding: 70px 0;
+    padding: 70px;
+    justify-content: space-between;
 }
 
 /*Estilo para el menu u opciones/parte principal de la pagina web*/
@@ -44,7 +44,15 @@ body{
     justify-content: space-between;
 }
 
+.navbar ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
 
+.navbar a {
+    color: #DFDDE0;
+}
 
 
 /*Estilo para el logo*/
@@ -90,7 +98,6 @@ body{
 }
 .menu {
   cursor: pointer;
-  display: none;
 }
 
 /* estilos al submenu*/
@@ -199,7 +206,7 @@ td {
     
 }
 
-.recetas-2 h2 {
+.recetas-2 h2 {  
     font-size: 55px;
     line-height: 55px;
     color: #DFDDE0;
@@ -303,12 +310,12 @@ td {
     border: 1px solid #e85123;
 }
 
-/* estilos al pie de pagina footer  */
-
+/*estilos al pie de pagina footer  */
 
 .links {
     display: flex;
     justify-content: space-between;
+
 }
 
 .link {
@@ -322,21 +329,33 @@ td {
 }
 
 .link p{
-    color: #8d7e7b;
+    color: #DFDDE0;
     font-size: 14px;
     margin: 0 50px 150x 0;
 }
 
 .socials-2 img {
- width: 20px;
- height: 20px;
+    width: 20px;
+    height: 20px;
+    justify-content: center;
 }
 
-.footer {
-    padding-bottom: 50px;
+footer {
+    padding-bottom:50px ;
     position: absolute;
     bottom: 0;
     display: flex;
     justify-content: space-evenly;
 
 }
+
+  @media screen and (min-width: 480px) and (max-width: 1368px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+        list-style: none;
+    }
+
+  }
