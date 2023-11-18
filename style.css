@@ -349,13 +349,63 @@ footer {
 
 }
 
-  @media screen and (min-width: 480px) and (max-width: 1368px) {
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        text-decoration: none;
-        list-style: none;
+  @media screen and (max-width: 991px ) and (max-width: 1368px) {
+
+    .menu {
+        padding: 30px;
+    }
+    .menu label {
+        display: initial;
+    }
+     .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        display: none;
+        
     }
 
+    .menu .navbar ul li {
+        width: 100%;
+    }
+
+    #menu:checked ~ .navbar{
+        display: initial;
+    }
+
+    .header-content{
+        flex-direction: column;
+        padding: 30px;
+        margin-top: 130%;
+    }
+
+    .header-content h1 {
+        font-size: 40px;
+    }
+
+    .header-content p {
+        padding: 0;
+        margin-bottom: 40px;
+    }
+
+    .botons{
+        flex-direction: column;
+        align-items: center;
+    }
+    .btn-1 {
+        margin: 0 0 20px 0;
+    }
+
+    .arrow{
+        display: none;
+    }
+    .recetas {
+        flex-direction: column;
+        padding: 30%;
+        text-align: center;
+    }
+    .recetas-2 {
+        width: 100%;
+    }
   }

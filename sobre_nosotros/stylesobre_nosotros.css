@@ -19,3 +19,46 @@
 .sobre-info p{
     font-size: 30px;
 }
+
+
+
+@media screen and (max-width: 768px) {
+    /* Estilos para pantallas más pequeñas */
+    .bebidas-company {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+        list-style: none;
+    }
+    .sobre-info img {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+        list-style: none;
+    }
+
+  }
+  
+  @media screen (max-width: 991px ) and (max-width: 1368px)  {
+
+    .bebidas-company {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+        list-style: none;
+    }
+    .sobre-info .imagen .parrafo{
+
+        margin: 0;
+        font-size: 18px;
+        padding: 0 200px;
+    }
+
+  }
+  
+  
+  
+    

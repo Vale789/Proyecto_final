@@ -1,12 +1,16 @@
 //carrito
 
+//carrito
+
 const carrito = document.getElementById('carrito');
 const elementos = document.getElementById('lista');
 const elementos2 = document.getElementById('lista-2');
 const lista = document.querySelector('#lista-carrito tbody');
-const vaciarCarritoBtn = document.getElementById = ('vaciar-carrito');
+// Corrección del getElementById
+// const vaciarCarritoBtn = document.getElementById = ('vaciar-carrito');
+const vaciarCarritoBtn = document.getElementById('vaciar-carrito');
 
- cargarEventListeners();
+cargarEventListeners();
 function cargarEventListeners() {
     elementos.addEventListener('click', comprarElemento);
     elementos2.addEventListener('click', comprarElemento);
@@ -23,13 +27,23 @@ function comprarElemento(e) {
         leerDatosElemento(elemento);
     }
 }
+// Corrección del get atributte
+// function leerDatosElemento(elemento) {
+//     const infoElemento = {
+//         imagen: elemento.querySelector('img').src,
+//         titulo: elemento.querySelector('h3').textContent,
+//         precio: elemento.querySelector('.precio').textContent,
+//         id: elemento.querySelector('a').getAttibute('data-id')
+//     }
+//     insetarCarrito(infoElemento);
+// }
 
 function leerDatosElemento(elemento) {
     const infoElemento = {
         imagen: elemento.querySelector('img').src,
         titulo: elemento.querySelector('h3').textContent,
         precio: elemento.querySelector('.precio').textContent,
-        id: elemento.querySelector('a').getAttibute('data-id')
+        id: elemento.querySelector('a').getAttribute('data-id')
     }
     insetarCarrito(infoElemento);
 }
@@ -137,4 +151,4 @@ function eliminarElementoLocalStorage(elemento) {
 }
 function vaciarLocalStorage() {
     localStorage.clear()
-} 
+}
