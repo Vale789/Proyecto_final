@@ -3,38 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Iniciar sesion</title>
+    <title>DRINKS LOIA</title>
     <link rel="stylesheet" href="styleiniciarsesion.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" href="../imagenes/soda.png">
+
 </head>
 <body>
-  <!-- Contact -->
-  <div id="register-form">
-    <h2>Registro</h2>
-    <input type="text" id="first-name" placeholder="Nombres">
-    <input type="text" id="first-apellido" placeholder="Apellidos">
-    <input type="email" id="email" placeholder="Correo electrónico">
-    <input type="password" id="password" placeholder="Contraseña">
-    <select id="gender">
-      <option value="">Género</option>
-      <option value="male">Masculino</option>
-      <option value="female">Femenino</option>
-      <option value="other">Otro</option>
-    </select>
-    <button onclick="register()">Registrarse</button>
-  </div>
+<div class="wrapper_sesion">
+  <form action="">
+    <h1>Inicia Sesión</h1>
+    <div class="input-box">
+      <input type="text" placeholder="Email" required>
+    </div>
+    <div class="input-box">
+      <input type="password" placeholder="Contrasena" required>
+    </div>
+    <button type="submit" class="btn">Iniciar</button>
+    <div class="register-link">
+      <p>No te has registrado? <a href="registrarse.html">Registrate</a></p>
 
-  <div id="login-form">
-    <h2>Iniciar Sesión</h2>
-    <input type="email" id="login-email" placeholder="Correo electrónico">
-    <input type="password" id="login-password" placeholder="Contraseña">
-    <button onclick="login()">Iniciar Sesión</button>
-  </div>
-
-  <div id="user-info">
-    Bienvenido, <span id="user-name"></span>!
-    <button onclick="logout()">Cerrar Sesión</button>
-  </div>
-
-  <script src="iniciarsesion.js"></script>
+    </div>
+  </form>
+</div>
 </body>
 </html>
