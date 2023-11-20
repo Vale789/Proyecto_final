@@ -1,39 +1,29 @@
-function iniciarSesion() {
-    const correoLogin = document.getElementById('Email').value;
-    const contrasenaLogin = document.getElementById('contrasena').value;
+function login() {
+    const email = document.getElementById('email').value;
+    const contrasena = document.getElementById('contrasena').value;
 
-    const usuarioGuardado = localStorage.getItem(contrasenaLogin);
+    // Verificar si el usuario existe en el localStorage
+    const usuarioGuardado = localStorage.getItem(email);
 
     if (usuarioGuardado) {
+        // Si el usuario existe, obtener los datos almacenados
         const usuario = JSON.parse(usuarioGuardado);
 
-        if (usuario.contrasena === contrasenaLogin) {
-            document.getElementById('mensajeError').innerText = '';
-
-            // Mostrar usuario logueado
-            document.getElementById('usuarioLogueado').style.display = 'block';
-            document.getElementById('nombreUsuario').innerText = usuario.nombre;
-
-            // Ocultar formulario de inicio de sesión
-            document.getElementById('app').style.display = 'none';
+        // Verificar si la contraseña coincide
+        if (usuario.contrasena === contrasena) {
+            alert('Inicio de sesión exitoso');
+            // Puedes redirigir a otra página o realizar acciones adicionales después del inicio de sesión
         } else {
-            document.getElementById('mensajeError').innerText = 'Contraseña incorrecta';
+            // Contraseña incorrecta
+            mostrarError('Contraseña incorrecta');
         }
     } else {
-        document.getElementById('mensajeError').innerText = 'Usuario no registrado';
+        // Usuario no encontrado
+        mostrarError('Usuario no encontrado. Por favor, regístrate.');
     }
 }
 
-function cerrarSesion() {
-    // Limpiar campos de inicio de sesión
-    document.getElementById('correoLogin').value = '';
-    document.getElementById('contrasenaLogin').value = '';
-
-    // Ocultar usuario logueado y mostrar formulario de inicio de sesión
-    document.getElementById('usuarioLogueado').style.display = 'none';
-    document.getElementById('app').style.display = 'block';
-}
-
-function irA(pagina) {
-    window.location.href = pagina;
+function mostrarError(mensaje) {
+    const errorDiv = document.getElementById('error-message');
+    errorDiv.textContent = mensaje;
 }

@@ -16,5 +16,5 @@ function register() {
 
     localStorage.setItem(correo, JSON.stringify(usuario)); // Cambiado a email
 
-    alert('Usuario creado correctamente. Por favor, inicie sesión.');
+    alert('Usuario creado correctamente. Por favor, inicie sesión.');
 }

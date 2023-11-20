@@ -63,3 +63,11 @@ body{
   button:hover {
     background-color: #31193d;
   }
+
+  
+  a{
+    text-decoration: underline;
+    color: #790606;
+    text-decoration: none;
+    font-weight: 600;
+}
