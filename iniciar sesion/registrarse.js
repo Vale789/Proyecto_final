@@ -1,9 +1,10 @@
-function crearUsuario() {
-    const nombre = document.getElementById('Nombres').value;
-    const apellido = document.getElementById('Apellidos').value;
-    const correo = document.getElementById('Email').value;
-    const sexo = document.getElementById('sexo').value;
-    const contrasena = document.getElementById('contrasena').value;
+function register() {
+    // dentro del getElementById van como los tiene en el ID del html
+    const nombre = document.getElementById('firstname').value; // Corregido el ID
+    const apellido = document.getElementById('firstapellido').value; // Corregido el ID
+    const correo = document.getElementById('registroEmail').value; // Corregido el ID
+    const sexo = document.getElementById('Sexo').value; // Corregido el ID
+    const contrasena = document.getElementById('registroContrasena').value;
 
     const usuario = {
         nombre,
@@ -12,9 +13,8 @@ function crearUsuario() {
         sexo,
         contrasena
     };
-    localStorage.setItem(correo, JSON.stringify(usuario));
 
-    alert('Usuario creado correctamente. Por favor, inicie sesión.');
+    localStorage.setItem(correo, JSON.stringify(usuario)); // Cambiado a email
+
+    alert('Usuario creado correctamente. Por favor, inicie sesión.');
 }
-  
-  
