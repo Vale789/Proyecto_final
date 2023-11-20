@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DRINKS LOIA</title>
     <link rel="stylesheet" href="iniciarsesion.js">
-    <script src="iniciarsesion.js"></script>
     <link rel="stylesheet" href="styleiniciarsesion.css">
     <link rel="icon" href="../imagenes/soda.png">
 
@@ -21,12 +20,13 @@
       <input type="password" placeholder="Contrasena" required>
     </div>
     <div id="error-message" class="error-message"></div>
-      <a href="../index.html"><button type="button" class="btn" onclick="login()" >Iniciar Sesión</button></a>
+      <button type="button" class="btn" onclick="login()" >Iniciar Sesión</button>
       <div class="register-link">
       <p>No te has registrado? <a href="registrarse.html">Registrate</a></p>
-
+      <button onclick="logout()">Cerrar sesion</button>
     </div>
   </form>
 </div>
+<script src="iniciarsesion.js"></script>
 </body>
 </html>

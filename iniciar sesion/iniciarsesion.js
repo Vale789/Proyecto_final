@@ -11,7 +11,7 @@ function login() {
 
         // Verificar si la contraseña coincide
         if (usuario.contrasena === contrasena) {
-            alert('Inicio de sesión exitoso');
+            localStorage = 'index.html'
             // Puedes redirigir a otra página o realizar acciones adicionales después del inicio de sesión
         } else {
             // Contraseña incorrecta
@@ -27,3 +27,38 @@ function mostrarError(mensaje) {
     const errorDiv = document.getElementById('error-message');
     errorDiv.textContent = mensaje;
 }
+
+
+
+// cerrar sesion
+ function logout() {
+    var email = document.getElementById("email").value;
+  var contrasena = document.getElementById("contrasena").value;
+
+  // Guardar información de inicio de sesión en el almacenamiento local
+  localStorage.setItem("email", email);
+  localStorage.setItem("contrasena", contrasena);
+
+  alert("Inicio de sesión exitoso");
+}
+
+function logout() {
+  // Eliminar la información de inicio de sesión del almacenamiento local
+  localStorage.removeItem("email");
+  localStorage.removeItem("contrasena");
+
+  alert("Sesión cerrada");
+ }
+
+
+ // Verificar si hay información de inicio de sesión guardada al cargar la página
+window.onload = function() {
+    var username = localStorage.getItem("email");
+    var password = localStorage.getItem("contrasena");
+  
+    if (username && password) {
+      document.getElementById("email").value = username;
+      document.getElementById("contrasena").value = password;
+    }
+  };
+
