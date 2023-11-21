@@ -3,10 +3,10 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "poppins", sans-serif;
+     background: linear-gradient(90deg, #31193d 0%, #1d39f2 100%);
 }
 
 .bebidas-company {
-    background: linear-gradient(90deg, #31193d 0%, #1d39f2 100%);
     background-color: aliceblue;
     padding: 250px;
 }
