@@ -1,7 +1,4 @@
 :root{
-    --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
-    'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
-    'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
     --transition: all 0.1s cubic-bezier(0.645, 0.045, 0.355, 1)
 }
 
@@ -12,7 +9,8 @@
 }
 
 body{
-    font-family: var(--font-mono);
+    background: linear-gradient(90deg, #31193d 0%, #1d39f2 100%);
+    font-family: 'Blogger sans', sans-serif;
 }
 
 section{
@@ -31,6 +29,7 @@ section h1{
 
 section h2{
     text-align:center;
+    color: #ffffff ;
     width: 100%;
     margin-bottom: 1em;
     font-size: 2.5em
@@ -42,7 +41,7 @@ section form{
     flex-wrap: wrap;
     max-width: 500px;
     border-radius: 20px;
-    border: 2px solid rgba(0,0,0,.1);
+    border: 2px solid rgba(219, 24, 236, 0.1);
 }
 
 section form label{
@@ -65,7 +64,7 @@ section form input[type='submit']{
     cursor: pointer;
     margin-top: 1.5em;
     background-color: #003DFF;
-    color: #fff;
+    color: #ffffff;
     font-family: var(--font-mono);
     transition: var(--transition);
 } 
@@ -82,7 +81,7 @@ section p{
 
 section p a{
     text-decoration: none;
-    color: #ff0000;
+    color: #d0ff00;
 }
 
 
@@ -93,16 +92,16 @@ section form {
     display: flex;
     flex-wrap: wrap;
     max-width: 500px;
-    border-radius: 10px;
-    border: 2px solid #db241b;
-    background-color: #080202;
+    border-radius: 40px;
+    border: 2px solid #ffffff;
+    background-color: #ff145a;
 }
 
 section form label {
     width: 100%;
     padding: 0.2em;
     margin-bottom: 0.5em;
-    color: #ffffff;
+    color: #000000;
 }
 
 section form input,
@@ -112,8 +111,8 @@ section form textarea {
     margin-bottom: 1em;
     padding: 10px;
     border-radius: 5px;
-    border: 1px solid #db241b;
-    outline-color: #db241b;
+    border: 1px solid #ffffff;
+    outline-color: #36022b;
     background-color: #ffffff;
     color: #000000;
 }
@@ -121,7 +120,7 @@ section form textarea {
 section form input[type='submit'] {
     cursor: pointer;
     margin-top: 1.5em;
-    background-color: #db241b;
+    background-color: #000000;
     color: #ffffff;
     font-family: "Poppins", sans-serif;
     font-weight: 700;
@@ -131,7 +130,7 @@ section form input[type='submit'] {
 }
 
 section form input[type='submit']:hover {
-    background-color: #ab1c15;
+    background-color: #03062b;
 }
 
 section form p {
@@ -141,12 +140,11 @@ section form p {
 
 section form p a {
     text-decoration: none;
-    color: #db241b;
+    color: #a33077;
 }
 
 section form select:focus,
 section form input:focus,
 section form textarea:focus {
-    border-color: #db241b;
+    border-color: #2c0221;
 }
-
